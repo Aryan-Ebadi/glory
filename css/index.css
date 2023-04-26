@@ -1,0 +1,436 @@
+body {
+    overflow: hidden;
+}
+
+#site_header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.02);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header_logo img {
+    width: 70px;
+}
+
+.header_navbar ul {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.header_navbar ul a {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: rgb(92, 92, 92);
+}
+
+.site_wrapper {
+    width: 100%;
+    height: 100vw;
+    position: relative;
+    transform: rotate(-90deg);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    white-space: nowrap;
+    /* white-space: nowrap;  */
+    /* scroll-snap-type: x mandatory; */
+    /* display: grid;
+    grid-template-columns: repeat(3, 100%); */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    background: #8e9eab;
+    background: -webkit-linear-gradient(to left, #ffffff, #e7e7e7);
+    background: linear-gradient(to left, #ffffff, #00000061)
+}
+
+.site_wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: end;
+    transform: rotate(90deg);
+    /* padding: 0 150px;
+    padding-top: 150px;
+    padding-bottom: 100px; */
+}
+
+.slide_inner {
+    width: 1180px;
+    height: 520px;
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide_left {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.seo_element {
+    padding-top: 60px;
+    width: 630px;
+    min-width: 630px;
+}
+
+.seo_element .hand1_img {
+    width: 224px;
+    position: absolute;
+    top: 319px;
+    animation: hand1_rotate 4s linear infinite;
+    filter: drop-shadow(-2px 3px 3px #00000038);
+}
+
+@keyframes hand1_rotate {
+    0% {
+        transform: none;
+    }
+
+    50% {
+        transform: translate(-8px, 7px);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.seo_element .thunder_img {
+    width: 150px;
+    position: absolute;
+    left: 215px;
+    top: 185px;
+    transform: rotate(180deg);
+    animation: thunder 4s infinite;
+    transition: all .5s ease;
+}
+
+.seo_element .thunder_img:hover {
+    filter: drop-shadow(-4px -5px 6px #e08300) !important;
+}
+
+@keyframes thunder {
+    0% {
+        filter: drop-shadow(-4px -5px 6px #e08300);
+    }
+
+    50%,
+    100% {
+        filter: none;
+    }
+}
+
+.seo_element .hand2_img {
+    width: 224px;
+    position: absolute;
+    right: 50px;
+    top: 89px;
+    animation: hand2_rotate 4s linear infinite;
+    filter: drop-shadow(2px 3px 3px #00000038);
+}
+
+@keyframes hand2_rotate {
+    0% {
+        transform: none;
+    }
+
+    50% {
+        transform: translate(8px, -7px);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.slide_right {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 2rem 0;
+}
+
+.slide h2 {
+    font-size: 1.9rem;
+}
+
+.slide_right_title {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 2rem;
+}
+
+.slide_right_title img {
+    width: 34px;
+}
+
+.slide_right_title img:nth-child(3) {
+    transform: rotateY(180deg);
+}
+
+.slide_right p {
+    white-space: initial;
+    text-align: right;
+    line-height: 1.9;
+    direction: rtl;
+    /* font-weight: 300; */
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+.dm_element {
+    width: 630px;
+    min-width: 630px;
+    position: relative;
+}
+
+.dm_element .mojasame {
+    width: 370px;
+    position: absolute;
+    top: -80px;
+    left: 30px;
+    z-index: 3;
+}
+
+.dm_element .fire_shine {
+    display: block;
+    width: 1px;
+    height: 1px;
+    background-color: #ffc100;
+    position: absolute;
+    left: 220px;
+    top: -20px;
+    box-shadow: 0px 0 32px 17px #ffc600;
+    animation: fireShine 2s linear infinite;
+}
+
+@keyframes fireShine {
+    0% {
+        box-shadow: 0px 0 32px 17px #ffc800a6;
+    }
+
+    50% {
+        box-shadow: 0px 0 54px 34px #ff990095;
+    }
+
+    100% {
+        box-shadow: 0px 0 32px 17px #ffc8009e;
+    }
+}
+
+.dm_element .circle_shine {
+    display: block;
+    position: absolute;
+    left: 31px;
+    top: -80px;
+    background: #ff000000;
+    width: 364px;
+    height: 364px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px -12px #ffcf00;
+    animation: circleShine 2s linear infinite;
+}
+
+@keyframes circleShine {
+    0% {
+        box-shadow: 0 0 50px -12px #ffd00036;
+
+    }
+
+    50% {
+        box-shadow: 0 0 50px -9px #ffcf00;
+
+    }
+
+    100% {
+        box-shadow: 0 0 50px -12px #ffd00036;
+    }
+}
+
+.slide_right_buttons {
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.slide_right_button {
+    display: block;
+    width: 140px;
+    height: 140px;
+    padding: 22px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide_right_button_border {
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/olive-circle3.svg);
+    animation: oliveCricleSpin 50s linear infinite;
+    transition: all .5s ease;
+}
+
+.slide_right_button:hover .slide_right_button_border {
+    filter: invert(54%) sepia(94%) saturate(1459%) hue-rotate(18deg) brightness(96%) contrast(101%);
+    transition: all .5s ease;
+    animation: oliveCricleSpin 9s linear infinite;
+}
+
+@keyframes oliveCricleSpin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.slide_right_button a {
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: all .5s ease;
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.slide_right_button:hover a {
+    color: rgb(194, 132, 0);
+    transition: all .5s ease;
+}
+
+/* .slide_right_buttons a{
+    border: 3px solid #ebac00da;
+    padding: 0.6rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+} */
+
+.nk_element_columns{
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+}
+
+.nk_element_columns img{
+    width: 80px;
+}
+
+#site_footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 100px;
+}
+
+.carousel_links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.carousel_links ul a {
+    font-weight: bold;
+    color: #949494;
+    font-size: 0.85rem;
+}
+
+.carousel_links ul a:hover {
+    font-size: 0.9rem;
+    color: #717171;
+
+}
+
+.carousel_active_link {
+    color: #a70000c9 !important;
+    font-size: 0.94rem !important;
+}
+
+.carousel_links .left_arrow,
+.carousel_links .right_arrow {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+}
+
+.carousel_links .left_arrow a,
+.carousel_links .right_arrow a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1rem;
+    height: 1rem;
+    background-image: url(../img/arrow.svg);
+    background-size: contain;
+    animation: arrowLeftRightShake 2s linear infinite;
+    /* filter: invert(48%) sepia(11%) saturate(21%) hue-rotate(328deg) brightness(89%) contrast(91%); */
+    filter: invert(12%) sepia(96%) saturate(3982%) hue-rotate(22deg) brightness(94%) contrast(142%);
+}
+
+.carousel_links .left_arrow a:hover {
+    transform: scale(1.4);
+}
+
+.carousel_links .right_arrow a {
+    transform: rotate(180deg);
+}
+
+.carousel_links .right_arrow a:hover {
+    transform: rotate(180deg) scale(1.4);
+}
+
+@keyframes arrowLeftRightShake {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: -6px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.slider_arrow{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    background-image: url(../img/arrow.svg);
+}
+
+.slider_left_arrow{
+    left: 30px;
+}

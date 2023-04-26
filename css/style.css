@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/iranyekanwebregularfanum.eot');
+    src: url('../fonts/iranyekanwebregularfanum.eot?#iefix') format('embedded-opentype'), url('../fonts/iranyekanwebregularfanum.woff') format('woff'), url('../fonts/iranyekanwebregularfanum.woff2') format('woff2'), url('../fonts/iranyekanwebregularfanum.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src: url('../fonts/iranyekanweblightfanum.eot');
+    src: url('../fonts/iranyekanweblightfanum.eot?#iefix') format('embedded-opentype'), url('../fonts/iranyekanweblightfanum.woff') format('woff'), url('../fonts/iranyekanweblightfanum.woff2') format('woff2'), url('../fonts/iranyekanweblightfanum.ttf') format('truetype');
+    font-weight: 300;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'yekan';
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
