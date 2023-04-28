@@ -33,6 +33,43 @@
 
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+        <!-- First Page -->
+        <div class="swiper-slide">
+          <div class="slide section_firstpage">
+            <div class="slide_inner firstpage_inner">
+              <div class="slide_left firstpage_element">
+                <img src="./img/1.png" alt="glory main image" />
+              </div>
+              <div class="slide_right firstpage_content">
+                <div class="slide_right_title">
+                  <img src="./img/leaf1.svg" alt="" />
+                  <h2>GloryNet / گلوری نت</h2>
+                  <img src="./img/leaf1.svg" alt="" />
+                </div>
+                <p>
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                  آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                  افزارها شناخت .
+                </p>
+                <div class="slide_right_buttons flex">
+                  <div class="slide_right_button">
+                    <a href="#">درباره گلوری نت</a>
+                    <span class="slide_right_button_border"></span>
+                  </div>
+                  <div class="slide_right_button">
+                    <a href="#">تیم ما</a>
+                    <span class="slide_right_button_border"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- SEO -->
         <div class="swiper-slide">
           <div class="slide section_seo">
@@ -177,7 +214,9 @@
         <div class="swiper-slide">Slide 5</div>
       </div>
 
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination">
+      </div>
+
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
@@ -206,10 +245,15 @@
         // direction: "vertical",
         slidesPerView: 1,
         spaceBetween: 0,
-        mousewheel: true,
+        // mousewheel: true,
+        mousewheel: {
+          forceToAxis: false,
+          thresholdDelta: 40 //mousepad scroll sensivity
+        },
         keyboard: {
           enabled: true,
         },
+        allowTouchMove: false,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
