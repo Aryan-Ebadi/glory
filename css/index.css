@@ -31,7 +31,7 @@ body {
     color: rgb(92, 92, 92);
 }
 
-.site_wrapper {
+/* .site_wrapper {
     width: 100%;
     height: 100vw;
     position: relative;
@@ -40,17 +40,12 @@ body {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     white-space: nowrap;
-    /* white-space: nowrap;  */
-    /* scroll-snap-type: x mandatory; */
-    /* display: grid;
-    grid-template-columns: repeat(3, 100%); */
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
     background: #8e9eab;
     background: -webkit-linear-gradient(to left, #ffffff, #e7e7e7);
     background: linear-gradient(to left, #ffffff, #00000061)
-}
+} */
 
 .site_wrapper::-webkit-scrollbar {
     display: none;
@@ -67,8 +62,8 @@ body {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    scroll-snap-align: end;
-    transform: rotate(90deg);
+    /* scroll-snap-align: end;
+    transform: rotate(90deg); */
     /* padding: 0 150px;
     padding-top: 150px;
     padding-bottom: 100px; */
@@ -434,3 +429,13 @@ body {
 .slider_left_arrow{
     left: 30px;
 }
+
+
+
+
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100vh;
+  }
