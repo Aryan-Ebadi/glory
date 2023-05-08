@@ -4,7 +4,6 @@ body {
 
 #site_header {
     width: 100%;
-    background: rgba(0, 0, 0, 0.02);
     position: fixed;
     top: 0;
     left: 0;
@@ -47,6 +46,12 @@ body {
     background: linear-gradient(to left, #ffffff, #00000061)
 } */
 
+.slider_wrapper{
+    /* background: #0e0e0e; */
+    background: linear-gradient(to bottom, #ffffff, #00000061)
+
+}
+
 .site_wrapper::-webkit-scrollbar {
     display: none;
 }
@@ -86,6 +91,7 @@ body {
 .firstpage_element img {
     width: 370px;
     transform: rotate3d(12, 180, 0, 180deg);
+    filter: drop-shadow(0px 0px 7px #bebebe80);
 }
 
 .seo_element {
@@ -127,12 +133,12 @@ body {
 }
 
 .seo_element .thunder_img:hover {
-    filter: drop-shadow(-4px -5px 6px #e08300) !important;
+    filter: drop-shadow(-4px -5px 16px #e08300) !important;
 }
 
 @keyframes thunder {
     0% {
-        filter: drop-shadow(-4px -5px 6px #e08300);
+        filter: drop-shadow(-4px -5px 16px #e08300);
     }
 
     50%,
@@ -294,6 +300,7 @@ body {
     background-image: url(../img/olive-circle3.svg);
     animation: oliveCricleSpin 50s linear infinite;
     transition: all .5s ease;
+    filter: invert(54%) sepia(94%) saturate(1459%) hue-rotate(18deg) brightness(96%) contrast(101%);
 }
 
 .slide_right_button:hover .slide_right_button_border {
@@ -333,14 +340,109 @@ body {
     font-weight: bold;
 } */
 
-.nk_element_columns {
-    display: flex;
-    justify-content: center;
-    gap: 160px;
+.nk_element_container{
+    position: relative;
+    height: 100%;
+    width: 550px;
 }
 
-.nk_element_columns img {
+.nk_element_roof{
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.nk_element_column1{
     width: 80px;
+    height: 270px;
+    top: 60px;
+    position: absolute;
+    left: 50px;
+    z-index: 3;
+}
+
+.nk_element_column2{
+    width: 80px;
+    height: 270px;
+    top: 60px;
+    position: absolute;
+    right: 50px;
+    z-index: 3;
+}
+
+.nk_element_stair{
+    width: 112%;
+    top: 325px;
+    position: absolute;
+    left: -5%;
+    z-index: 2;
+}
+
+.nk_element_backlight{
+    width: 370px;
+    height: 310px;
+    position: absolute;
+    top: 40px;
+    background: #0000001c;
+    left: 90px;
+}
+
+.innerwall_right{
+    width: 60px;
+    position: absolute;
+    background: #616161;
+    height: 290px;
+    right: 90px;
+    top: 50px;
+}
+
+.innerwall_left{
+    width: 60px;
+    position: absolute;
+    background: #616161;
+    height: 290px;
+    left: 90px;
+    top: 50px;
+}
+
+.innerwall_back{
+    width: 254px;
+    position: absolute;
+    background: #707070;
+    height: 290px;
+    right: 148px;
+    top: 50px;
+    z-index: 1;
+}
+
+.innerwall_floor1{
+    width: 110px;
+    position: absolute;
+    top: 267px;
+    height: 100px;
+    background: #adadad;
+    right: 116px;
+    transform: rotate(41deg);
+}
+
+.innerwall_floor2{
+    width: 254px;
+    position: absolute;
+    top: 270px;
+    height: 80px;
+    background: #adadad;
+    right: 148px;
+    z-index: 1;
+}
+
+.innerwall_floor3{
+    width: 110px;
+    position: absolute;
+    top: 266px;
+    height: 100px;
+    background: #adadad;
+    left: 116px;
+    transform: rotate(-41deg);
 }
 
 #site_footer {
@@ -460,4 +562,45 @@ body {
 .swiper-pagination-bullet-active {
     color: #fff;
     background: #007aff;
+}
+
+.swiper-pagination-bullet{
+    width: unset !important;
+    background: none !important;
+    font-size: 0.92rem;
+    color: #00000095;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    color: #9f1111 !important;
+    font-weight: bold;
+}
+
+.swiper-pagination{
+    gap: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 35px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #8c0000ba !important;
+    height: 100% !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 70px !important;
+}
+
+.swiper-button-prev{
+    color: #8c0000ba !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 70px !important;
+}
+
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0.1 !important;
 }

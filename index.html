@@ -31,11 +31,11 @@
       <div class="header_action"></div>
     </header>
 
-    <div class="swiper mySwiper">
+    <div class="slider_wrapper swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- First Page -->
         <div class="swiper-slide">
-          <div class="slide section_firstpage">
+          <div class="slide section_firstpage" data-slidename="گلوری نت">
             <div class="slide_inner firstpage_inner">
               <div class="slide_left firstpage_element">
                 <img src="./img/1.png" alt="glory main image" />
@@ -72,7 +72,7 @@
 
         <!-- SEO -->
         <div class="swiper-slide">
-          <div class="slide section_seo">
+          <div class="slide section_seo" data-slidename="خدمات سئو">
             <div class="slide_inner seo_inner">
               <div class="slide_left seo_element">
                 <img class="hand1_img" src="./img/hand1.png" alt="hand1" />
@@ -115,12 +115,12 @@
 
         <!-- Digital Marketing -->
         <div class="swiper-slide">
-          <div class="dm_slide slide">
+          <div class="dm_slide slide" data-slidename="دیجیتال مارکتینگ">
             <div class="slide_inner dm_inner">
               <div class="slide_left dm_element">
                 <img
                   class="mojasame"
-                  src="./img/sclup final5.png"
+                  src="./img/sclup final4.png"
                   alt="mojasame"
                 />
                 <span class="fire_shine"></span>
@@ -160,26 +160,46 @@
           </div>
         </div>
 
+        <!-- Nemune Kar -->
         <div class="swiper-slide">
-          <!-- Nemune Kar -->
-          <div class="nk_slide slide">
+          <div class="nk_slide slide" data-slidename="نمونه کار">
             <div class="slide_inner nk_inner">
               <div class="slide_left nk_element">
                 <div class="nk_element_container">
-                  <div class="nk_element_roof"></div>
-                  <div class="nk_element_columns">
-                    <img src="./img/column1.png" alt="column1" />
-                    <img src="./img/column1.png" alt="column2" />
-                  </div>
-                  <div class="nk_element_stair">
-                    <img src="./img/stair.png" alt="stair" />
-                  </div>
+                  <img
+                    class="nk_element_roof"
+                    src="./img/roof.png"
+                    alt="roof"
+                    class="roof"
+                  />
+                  <img
+                    class="nk_element_column1"
+                    src="./img/column1.png"
+                    alt="column1"
+                  />
+                  <img
+                    class="nk_element_column2"
+                    src="./img/column1.png"
+                    alt="column2"
+                  />
+                  <img
+                    class="nk_element_stair"
+                    src="./img/stair.png"
+                    alt="stair"
+                  />
+                  <span class="nk_element_backlight"></span>
+                  <span class="innerwall_right"></span>
+                  <span class="innerwall_left"></span>
+                  <span class="innerwall_back"></span>
+                  <span class="innerwall_floor1"></span>
+                  <span class="innerwall_floor2"></span>
+                  <span class="innerwall_floor3"></span>
                 </div>
               </div>
               <div class="slide_right nk_content">
                 <div class="slide_right_title">
                   <img src="./img/leaf1.svg" alt="" />
-                  <h2>Digital Marketing/دیجیتال مارکتینگ</h2>
+                  <h2>Work Samples / نمونه کار</h2>
                   <img src="./img/leaf1.svg" alt="" />
                 </div>
                 <p>
@@ -209,13 +229,9 @@
             </div>
           </div>
         </div>
-
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
       </div>
 
-      <div class="swiper-pagination">
-      </div>
+      <div class="swiper-pagination"></div>
 
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -241,6 +257,8 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
     <script src="./js/swiper.js"></script>
     <script>
+      let bulletNameArray = document.querySelectorAll(".slide");
+      console.log(bulletNameArray[0].dataset.slidename);
       var swiper = new Swiper(".mySwiper", {
         // direction: "vertical",
         slidesPerView: 1,
@@ -248,15 +266,22 @@
         // mousewheel: true,
         mousewheel: {
           forceToAxis: false,
-          thresholdDelta: 40 //mousepad scroll sensivity
+          thresholdDelta: 40, //mousepad scroll sensivity
         },
         keyboard: {
           enabled: true,
         },
         allowTouchMove: false,
+        // pagination: {
+        //   el: ".swiper-pagination",
+        //   clickable: true,
+        // },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + bulletNameArray[index].dataset.slidename + "</span>";
+          },
         },
         navigation: {
           nextEl: ".swiper-button-next",
