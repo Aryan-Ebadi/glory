@@ -12,6 +12,15 @@
     font-weight: 300;
 }
 
+@font-face {
+    font-family: 'Freight';
+    src: url('../fonts/FreightSansProBold-Regular.eot');
+    src: url('../fonts/FreightSansProBold-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/FreightSansProBold-Regular.woff') format('woff'), url('../fonts/FreightSansProBold-Regular.woff2') format('woff2'), url('../fonts/FreightSansProBold-Regular.ttf') format('truetype');
+    font-weight: bold;
+}
+
+
+
 * {
     padding: 0;
     box-sizing: border-box;
@@ -20,6 +29,10 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+::selection{
+    background: #410000;
 }
 
 body {
@@ -44,4 +57,10 @@ ul {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

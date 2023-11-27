@@ -5,66 +5,355 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <title>Glory Net</title>
+    <link rel="stylesheet" href="./css/index-responsive.css" />
+    <title>Glory Group | Digital Marketing Agency</title>
   </head>
   <body>
+    <!-- Preloading -->
+    <div class="preloading">
+      <div class="preloading-logo">
+        <!-- <img
+          src="./img/logo-glory-transparent.png"
+          width="180"
+          height="180"
+          alt="glory pre loading logo"
+        /> -->
+        <img
+          class="preloading-logo-preloading"
+          src="./img/logo-glory2.png"
+          width="180"
+          height="180"
+          alt="glory pre loading overlay logo"
+        />
+      </div>
+      <div class="preloading-text flex-column">
+        <span>GLORY GROUP</span>
+        <span>DIGITAL MARKETING AGENCY</span>
+      </div>
+      <div class="preloading-progressbar">
+        <span class="preloading-backlight"></span>
+      </div>
+    </div>
+
+    <!-- Site Header -->
     <header id="site_header">
       <div class="header_logo">
-        <img src="./img/Untitled-1.png" alt="glory website logo" />
+        <img
+          src="./img/logo-glory2.png"
+          width="70"
+          height="70"
+          alt="glory website logo"
+        />
       </div>
       <div class="header_navbar">
         <ul>
-          <li><a href="#">صفحه نخست</a></li>
-          <li><a href="#">خدمات</a></li>
-          <li><a href="#">محصولات</a></li>
-          <li><a href="#">تعرفه</a></li>
-          <li><a href="#">تیم گلوری</a></li>
-          <li><a href="#">درباره ما</a></li>
-          <li><a href="#">تماس با ما</a></li>
+          <li><a class="link" href="#">صفحه نخست</a></li>
+          <li><a class="link" href="#">خدمات</a></li>
+          <li><a class="link" href="#">محصولات</a></li>
+          <li><a class="link" href="#">تعرفه</a></li>
+          <li><a class="link" href="#">تیم گلوری</a></li>
+          <li><a class="link" href="#">درباره ما</a></li>
+          <li><a class="link" href="#">تماس با ما</a></li>
         </ul>
       </div>
-      <div class="header_action"></div>
+
+      <div class="header_right">
+        <div class="header_action">
+          <a class="header_action_btn">
+            مشاوره رایگان
+            <div class="star-1">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 784.11 815.53"
+                style="
+                  shape-rendering: geometricPrecision;
+                  text-rendering: geometricPrecision;
+                  image-rendering: optimizeQuality;
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                "
+                version="1.1"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-2">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 784.11 815.53"
+                style="
+                  shape-rendering: geometricPrecision;
+                  text-rendering: geometricPrecision;
+                  image-rendering: optimizeQuality;
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                "
+                version="1.1"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-3">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 784.11 815.53"
+                style="
+                  shape-rendering: geometricPrecision;
+                  text-rendering: geometricPrecision;
+                  image-rendering: optimizeQuality;
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                "
+                version="1.1"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-4">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 784.11 815.53"
+                style="
+                  shape-rendering: geometricPrecision;
+                  text-rendering: geometricPrecision;
+                  image-rendering: optimizeQuality;
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                "
+                version="1.1"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-5">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 784.11 815.53"
+                style="
+                  shape-rendering: geometricPrecision;
+                  text-rendering: geometricPrecision;
+                  image-rendering: optimizeQuality;
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                "
+                version="1.1"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div class="star-6">
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 784.11 815.53"
+                style="
+                  shape-rendering: geometricPrecision;
+                  text-rendering: geometricPrecision;
+                  image-rendering: optimizeQuality;
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                "
+                version="1.1"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs></defs>
+                <g id="Layer_x0020_1">
+                  <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+                  <path
+                    d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+                    class="fil0"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <!-- mobile navbar -->
+        <div class="mobile_menu">
+          <div class="mobile_menu_toggler">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" class="toggle">
+              <div class="bar bar--top"></div>
+              <div class="bar bar--middle"></div>
+              <div class="bar bar--bottom"></div>
+            </label>
+          </div>
+        </div>
+      </div>
     </header>
+
+    <!-- Custom Cursor -->
+    <div class="cursor_circle"></div>
+    <div class="cursor">
+      <div class="cursor_dot"></div>
+    </div>
 
     <div class="slider_wrapper swiper mySwiper">
       <div class="swiper-wrapper">
         <!-- First Page -->
         <div class="swiper-slide">
-          <div class="slide section_firstpage" data-slidename="گلوری نت">
+          <div class="slide section_firstpage" data-slidename="گلوری گروپ">
             <div class="slide_inner firstpage_inner">
               <div class="slide_left firstpage_element">
-                <img src="./img/1.png" alt="glory main image" />
+                <img src="./img/gladiator.png" alt="glory main image" />
               </div>
               <div class="slide_right firstpage_content">
-                <div class="slide_right_title">
-                  <img src="./img/leaf1.svg" alt="" />
-                  <h2>GloryNet / گلوری نت</h2>
-                  <img src="./img/leaf1.svg" alt="" />
+                <div class="slide_title">
+                  <h1 class="firstpage_sitename">
+                    آژانس دیجیتال مارکتینگ گلوری
+                  </h1>
+                  <span class="firstpage_sitename_en"
+                    >GLORY Digital Marketing Agency</span
+                  >
+                  <!-- <span class="title_en">GLORY GROUP</span> -->
                 </div>
                 <p>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                  کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
-                  آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
-                  افزارها شناخت .
+                  موسسه دیجیتال مارکتینگ گلوری با هدف توسعه و کمک به کسب و کار
+                  ها در دنیای دیجیتال تاسیس شده است. ما بر اساس نیاز و سلیقه
+                  کارفرما تمامی خدمات دیجیتال مارکتینگ را که شامل : طراحی سایت ،
+                  سئو سایت ، سوشال مدیا ، طراحی اپلیکیشن می باشد را برای شما به
+                  بهترین شکل ممکن انجام میدهیم و همچنین از اول تا آخر مسیر توسعه
+                  کسب و کار شما در کنارتان خواهیم بود
+                </p>
+
+                <div class="slide_right_buttons flex">
+                  <a href="#webdesign" class="card">
+                    <div class="bg">
+                      <span class="card-content">با ما آشنا شوید</span>
+                    </div>
+                    <div class="blob1"></div>
+                  </a>
+                  <a href="#" class="card">
+                    <div class="bg">
+                      <span class="card-content">مشاوره رایگان</span>
+                    </div>
+                    <div class="blob1"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Design -->
+        <div id="webdesign" class="swiper-slide">
+          <div class="slide section_wd" data-slidename="طراحی وبسایت">
+            <div class="slide_inner wd_inner">
+              <div class="slide_left wd_element">
+                <img
+                  src="./img/web-design2.png"
+                  width="385"
+                  height="437"
+                  alt="web design element"
+                />
+                <span class="eye_shine"></span>
+                <span class="eye_shine2"></span>
+              </div>
+              <div class="slide_right wd_content">
+                <div class="slide_title">
+                  <span class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </span>
+                  <h2>طراحی وبسایت</h2>
+                  <span class="title_en">WED DESIGN</span>
+                </div>
+                <!-- <div class="slide_right_title">
+                  <img src="./img/leaf1.svg" alt="" />
+                  <h2>Web Design/طراحی وبسایت</h2>
+                  <img src="./img/leaf1.svg" alt="" />
+                </div> -->
+                <p>
+                  بزرگ ترین مغازه شما در دنیای دیجیتال، وب سایت شماست پس طراحی
+                  وبسایتتان اهمیت بالایی دارد. تیم طراحی سایت گلوری با توجه به
+                  نیاز های کسب و کار شما و متناسب با سلیقه ی شما، مناسب ترین
+                  سایت را برای شما طراحی می کند.
                 </p>
                 <div class="slide_right_buttons flex">
-                  <div class="slide_right_button">
-                    <a href="#">درباره گلوری نت</a>
-                    <span class="slide_right_button_border"></span>
+                  <div class="card">
+                    <div class="bg">
+                      <span class="card-content">تعرفه طراحی سایت</span>
+                    </div>
+                    <div class="blob1"></div>
                   </div>
-                  <div class="slide_right_button">
-                    <a href="#">تیم ما</a>
-                    <span class="slide_right_button_border"></span>
+                  <div class="card">
+                    <div class="bg">
+                      <span class="card-content">مشاوره طراحی سایت</span>
+                    </div>
+                    <div class="blob1"></div>
+                  </div>
+                  <div class="card">
+                    <div class="bg">
+                      <span class="card-content">مشاوره طراحی سایت</span>
+                    </div>
+                    <div class="blob1"></div>
                   </div>
                 </div>
+                <!-- <div class="slide_right_buttons flex">
+                  <div class="slide_right_button">
+                    <a href="#">تعرفه طراحی سایت</a>
+                    <span class="slide_right_button_border"></span>
+                  </div>
+                  <div class="slide_right_button">
+                    <a href="#">مشاوره طراحی سایت</a>
+                    <span class="slide_right_button_border"></span>
+                  </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -78,34 +367,46 @@
                 <img class="hand1_img" src="./img/hand1.png" alt="hand1" />
                 <img
                   class="thunder_img"
-                  src="./img/thunder without shadow2.png"
+                  src="./img/thunder.png"
                   alt="thunder"
                 />
                 <img class="hand2_img" src="./img/hand2.png" alt="hand2" />
               </div>
               <div class="slide_right seo_content">
-                <div class="slide_right_title">
-                  <img src="./img/leaf1.svg" alt="" />
-                  <h2>SEO/سئو</h2>
-                  <img src="./img/leaf1.svg" alt="" />
+                <div class="slide_title">
+                  <span class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </span>
+                  <h2>سئو و بهینه سازی سایت</h2>
+                  <span class="title_en">SEO</span>
                 </div>
                 <p>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                  کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
-                  آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
-                  افزارها شناخت .
+                  معجزه فروش شما با سئو اتفاق میفته ، سئو فرآیندی است که با
+                  بهینه سازی و انجام یک سری موارد بر روی سایت شما باعث می شود
+                  سایت شما به مرور به جایگاه اول نتایج گوگل با کلمه ی مورد نظر
+                  شما برسد.
                 </p>
+
                 <div class="slide_right_buttons flex">
-                  <div class="slide_right_button">
-                    <a href="#">تعرفه سئو</a>
-                    <span class="slide_right_button_border"></span>
+                  <div class="card">
+                    <div class="bg">
+                      <span class="card-content">تعرفه سئو</span>
+                    </div>
+                    <div class="blob1"></div>
                   </div>
-                  <div class="slide_right_button">
-                    <a href="#">مشاوره سئو</a>
-                    <span class="slide_right_button_border"></span>
+                  <div class="card">
+                    <div class="bg">
+                      <span class="card-content">مشاوره سئو</span>
+                    </div>
+                    <div class="blob1"></div>
                   </div>
                 </div>
               </div>
@@ -113,9 +414,9 @@
           </div>
         </div>
 
-        <!-- Digital Marketing -->
+        <!-- Social Media -->
         <div class="swiper-slide">
-          <div class="dm_slide slide" data-slidename="دیجیتال مارکتینگ">
+          <div class="dm_slide slide" data-slidename="سوشیال مدیا">
             <div class="slide_inner dm_inner">
               <div class="slide_left dm_element">
                 <img
@@ -126,33 +427,97 @@
                 <span class="fire_shine"></span>
                 <span class="circle_shine"></span>
               </div>
-              <div class="slide_right dm_content">
-                <div class="slide_right_title">
-                  <img src="./img/leaf1.svg" alt="" />
-                  <h2>Digital Marketing/دیجیتال مارکتینگ</h2>
-                  <img src="./img/leaf1.svg" alt="" />
+              <div class="slide_right social_content">
+                <div class="slide_title">
+                  <span class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </span>
+                  <h2>سوشیال مدیا</h2>
+                  <span class="title_en">Social Media</span>
                 </div>
                 <p>
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
-                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                  کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
-                  آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
-                  افزارها شناخت .
+                  بهترین راه دیده شدن کسب و کار شما سوشال مدیاست ، سوشال مدیا
+                  مجموعه ای کامل از بهترین شبکه های اجتماعی که شامل : اینستاگرام
+                  ، فیسبوک ، لینکدین ، توییتر و یوتیوب است که در دیده شدن کسب و
+                  کار شما تاثیر فوق العاده ای دارد
                 </p>
+
                 <div class="slide_right_buttons flex">
-                  <div class="slide_right_button">
-                    <a href="#">تبلیغات</a>
-                    <span class="slide_right_button_border"></span>
+                  <div class="card">
+                    <div class="bg">
+                      <span class="card-content">تعرفه خدمات</span>
+                    </div>
+                    <div class="blob1"></div>
                   </div>
-                  <div class="slide_right_button">
-                    <a href="#">خدمات اینستاگرام</a>
-                    <span class="slide_right_button_border"></span>
+                  <div class="card">
+                    <div class="bg">
+                      <span class="card-content">مشاوره سوشیال مدیا</span>
+                    </div>
+                    <div class="blob1"></div>
                   </div>
-                  <div class="slide_right_button">
-                    <a href="#">ریپورتاژ</a>
-                    <span class="slide_right_button_border"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Application -->
+        <div class="swiper-slide">
+          <div class="app_slide slide" data-slidename="اپلیکیشن">
+            <div class="slide_inner app_inner">
+              <div class="slide_left app_element">
+                <img
+                  class="app_img"
+                  src="./img/mobile-app.png"
+                  width="467"
+                  height="402"
+                  alt="Application"
+                />
+                <span class="fire_shine"></span>
+                <span class="circle_shine"></span>
+              </div>
+              <div class="slide_right social_content">
+                <div class="slide_title">
+                  <span class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </span>
+                  <h2>طراحی اپلیکیشن</h2>
+                  <span class="title_en">Application Design</span>
+                </div>
+                <p>
+                  اپلیکیشن موبایل میتواند یکی از در دسترس ترین راه های دسترسی
+                  به شما توسط مشتریانتان باشد. با این قابلیت شما میتوانید از
+                  رقیبان خود پیشی بگیرید و تخصصی تر کار کنید.
+                </p>
+
+                <div class="slide_right_buttons flex">
+                  <div class="card">
+                    <div class="bg">
+                      <span class="card-content">تعرفه طراحی اپلیکیشن</span>
+                    </div>
+                    <div class="blob1"></div>
+                  </div>
+                  <div class="card">
+                    <div class="bg">
+                      <span class="card-content">مشاوره طراحی اپلیکیشن</span>
+                    </div>
+                    <div class="blob1"></div>
                   </div>
                 </div>
               </div>
@@ -162,46 +527,148 @@
 
         <!-- Nemune Kar -->
         <div class="swiper-slide">
-          <div class="nk_slide slide" data-slidename="نمونه کار">
-            <div class="slide_inner nk_inner">
-              <div class="slide_left nk_element">
-                <div class="nk_element_container">
-                  <img
-                    class="nk_element_roof"
-                    src="./img/roof.png"
-                    alt="roof"
-                    class="roof"
-                  />
-                  <img
-                    class="nk_element_column1"
-                    src="./img/column1.png"
-                    alt="column1"
-                  />
-                  <img
-                    class="nk_element_column2"
-                    src="./img/column1.png"
-                    alt="column2"
-                  />
-                  <img
-                    class="nk_element_stair"
-                    src="./img/stair.png"
-                    alt="stair"
-                  />
-                  <span class="nk_element_backlight"></span>
-                  <span class="innerwall_right"></span>
-                  <span class="innerwall_left"></span>
-                  <span class="innerwall_back"></span>
-                  <span class="innerwall_floor1"></span>
-                  <span class="innerwall_floor2"></span>
-                  <span class="innerwall_floor3"></span>
+          <div class="nemunekar_slide slide" data-slidename="نمونه کارها">
+            <div class="slide_inner nemunekar_inner">
+              <div class="nemunekar_content">
+                <div class="slide_title">
+                  <h2>همکاری های ما</h2>
+                  <span class="title_en">Our customers</span>
                 </div>
               </div>
-              <div class="slide_right nk_content">
-                <div class="slide_right_title">
-                  <img src="./img/leaf1.svg" alt="" />
-                  <h2>Work Samples / نمونه کار</h2>
-                  <img src="./img/leaf1.svg" alt="" />
+              <div class="nemunekar_container">
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/ingot2.png"
+                    class="w100-logo"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
                 </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/kargar2.png"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/afzoonravan.png"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/manto-khatoon.jpg"
+                    class="rounded-logo brightness-logo"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/sbtraders.png"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/masterkado.png"
+                    class="brightness-logo"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/yatash.jpg"
+                    class="rounded-logo brightness-logo"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/dedetail.jpg"
+                    class="rounded-logo"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/roco.png"
+                    class="brightness-logo"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/takhttavoos.jpg"
+                    class="rounded-logo"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/almaseshahr.png"
+                    class="brightness-logo"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/mi-logo.png"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/logo-vito.png"
+                    class="invert-logo"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+                <div class="nemunekar">
+                  <img
+                    src="./img/nemunekar/zhinora.jpg"
+                    class="brightness-logo rounded-logo"
+                    width="100"
+                    height="100"
+                    alt="لوگوی نمونه کار مجموعه"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="swiper-slide">
+          <div class="footer_slide slide" data-slidename="">
+            <div class="slide_inner footer_inner">
+              <div class="footer_content">
+                <h2>آژانس دیجیتال مارکتینگ گلوری</h2>
                 <p>
                   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                   استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
@@ -209,21 +676,51 @@
                   تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
                   کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
                   آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
-                  افزارها شناخت .
+                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
                 </p>
-                <div class="slide_right_buttons flex">
-                  <div class="slide_right_button">
-                    <a href="#">تبلیغات</a>
-                    <span class="slide_right_button_border"></span>
+                <div class="footer_contact_us">
+                  <div class="footer_phone">
+                    <div class="footer_phone_icon"></div>
+                    <p>شماره تماس: 09121005689</p>
                   </div>
-                  <div class="slide_right_button">
-                    <a href="#">خدمات اینستاگرام</a>
-                    <span class="slide_right_button_border"></span>
+                  <div class="footer_email">
+                    <div class="footer_email_icon"></div>
+                    <p>ایمیل: info@glorygroup.ir</p>
                   </div>
-                  <div class="slide_right_button">
-                    <a href="#">ریپورتاژ</a>
-                    <span class="slide_right_button_border"></span>
+                  <div class="footer_address">
+                    <div class="footer_address_icon"></div>
+                    <p>آدرس: ستارخان، خسرو جنوبی، اتابکی مهر ، پلاک 2</p>
                   </div>
+                </div>
+              </div>
+              <div class="footer_social">
+                <div class="social_item_whatsapp">
+                  <img
+                    src="./img/whatsapp-icon2.png"
+                    width="48"
+                    height="48"
+                    alt="whatsapp icon"
+                  />
+                  <span class="lamp"></span>
+                </div>
+                <div class="social_item_insta">
+                  <img
+                    src="./img/insta-icon.png"
+                    width="48"
+                    height="48"
+                    alt="instagram icon"
+                  />
+                  <span class="lamp"></span>
+                </div>
+                <div class="social_item_linkedin">
+                  <img
+                    src="./img/linkedin-icon.png"
+                    width="48"
+                    height="48"
+                    alt="linkedin icon"
+                  />
+                  <span class="lamp"></span>
                 </div>
               </div>
             </div>
@@ -231,36 +728,513 @@
         </div>
       </div>
 
+      <!-- swiper options -->
       <div class="swiper-pagination"></div>
-
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
 
-    <!-- <div id="site_footer">
-      <div class="carousel_links">
-        <ul>
-          <li class="left_arrow flex"><a href="#"></a></li>
-          <li><a class="carousel_active_link" href="#">گلوری نت</a></li>
-          <li><a href="#">طراحی وبسایت</a></li>
-          <li><a href="#">خدمات سئو</a></li>
-          <li><a href="#">دیجیتال مارکتینگ</a></li>
-          <li><a href="#">نمونه کار ها</a></li>
-          <li><a href="#">مشاوره رایگان</a></li>
-          <li><a href="#">چرا گلوری</a></li>
-          <li class="right_arrow flex"><a href="#"></a></li>
-        </ul>
+    <!-- MOBILE VERSION -->
+    <div class="mobile_wrapper">
+      <!-- FirstPage Mobile mobile section -->
+      <div class="mobile_firstpage">
+        <div class="slide_inner firstpage_inner">
+          <div class="slide_left firstpage_element">
+            <img
+              class="firstpage_element_img"
+              src="./img/gladiator.png"
+              alt="glory main image"
+            />
+          </div>
+          <div class="slide_right firstpage_content">
+            <div class="slide_title">
+              <h1 class="firstpage_sitename">آژانس دیجیتال مارکتینگ گلوری</h1>
+              <span class="firstpage_sitename_en"
+                >GLORY Digital Marketing Agency</span
+              >
+              <!-- <span class="title_en">GLORY GROUP</span> -->
+            </div>
+            <p>
+              موسسه دیجیتال مارکتینگ گلوری با هدف توسعه و کمک به کسب و کار ها در
+              دنیای دیجیتال تاسیس شده است. ما بر اساس نیاز و سلیقه کارفرما تمامی
+              خدمات دیجیتال مارکتینگ را که شامل : طراحی سایت ، سئو سایت ، سوشال
+              مدیا ، طراحی اپلیکیشن می باشد را برای شما به بهترین شکل ممکن انجام
+              میدهیم و همچنین از اول تا آخر مسیر توسعه کسب و کار شما در کنارتان
+              خواهیم بود
+            </p>
+
+            <div class="slide_right_buttons flex">
+              <a href="#webdesign" class="card">
+                <div class="bg">
+                  <span class="card-content">با ما آشنا شوید</span>
+                </div>
+                <div class="blob1"></div>
+              </a>
+              <a href="#" class="card">
+                <div class="bg">
+                  <span class="card-content">مشاوره رایگان</span>
+                </div>
+                <div class="blob1"></div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div> -->
+
+      <!-- Web Design mobile section -->
+      <div class="section_wd">
+        <div class="slide_inner m_slide_inner wd_inner">
+          <div class="slide_left wd_element">
+            <img
+              src="./img/web-design2.png"
+              width="354"
+              height="402"
+              alt="web design element"
+            />
+            <span class="eye_shine"></span>
+            <span class="eye_shine2"></span>
+          </div>
+          <div class="slide_right wd_content">
+            <div class="slide_title">
+              <span class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </span>
+              <h2>طراحی وبسایت</h2>
+              <span class="title_en">WED DESIGN</span>
+            </div>
+            <!-- <div class="slide_right_title">
+              <img src="./img/leaf1.svg" alt="" />
+              <h2>Web Design/طراحی وبسایت</h2>
+              <img src="./img/leaf1.svg" alt="" />
+            </div> -->
+            <p>
+              بزرگ ترین مغازه شما در دنیای دیجیتال، وب سایت شماست پس طراحی
+              وبسایتتان اهمیت بالایی دارد. تیم طراحی سایت گلوری با توجه به نیاز
+              های کسب و کار شما و متناسب با سلیقه ی شما، مناسب ترین سایت را برای
+              شما طراحی می کند.
+            </p>
+
+            <div class="slide_right_buttons flex">
+              <div class="card">
+                <div class="bg">
+                  <span class="card-content">تعرفه طراحی سایت</span>
+                </div>
+                <div class="blob1"></div>
+              </div>
+              <div class="card">
+                <div class="bg">
+                  <span class="card-content">مشاوره طراحی سایت</span>
+                </div>
+                <div class="blob1"></div>
+              </div>
+              <div class="card">
+                <div class="bg">
+                  <span class="card-content">مشاوره طراحی سایت</span>
+                </div>
+                <div class="blob1"></div>
+              </div>
+            </div>
+            <!-- <div class="slide_right_buttons flex">
+              <div class="slide_right_button">
+                <a href="#">تعرفه طراحی سایت</a>
+                <span class="slide_right_button_border"></span>
+              </div>
+              <div class="slide_right_button">
+                <a href="#">مشاوره طراحی سایت</a>
+                <span class="slide_right_button_border"></span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- SEO mobile section -->
+      <div class="section_seo">
+        <div class="slide_inner m_slide_inner seo_inner">
+          <div class="slide_left seo_element">
+            <img class="hand1_img" src="./img/hand1.png" alt="hand1" />
+            <img class="thunder_img" src="./img/thunder.png" alt="thunder" />
+            <img class="hand2_img" src="./img/hand2.png" alt="hand2" />
+          </div>
+          <div class="slide_right seo_content">
+            <div class="slide_title">
+              <span class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </span>
+              <h2>سئو و بهینه سازی سایت</h2>
+              <span class="title_en">SEO</span>
+            </div>
+            <p>
+              معجزه فروش شما با سئو اتفاق میفته ، سئو فرآیندی است که با بهینه
+              سازی و انجام یک سری موارد بر روی سایت شما باعث می شود سایت شما به
+              مرور به جایگاه اول نتایج گوگل با کلمه ی مورد نظر شما برسد.
+            </p>
+
+            <div class="slide_right_buttons flex">
+              <div class="card">
+                <div class="bg">
+                  <span class="card-content">تعرفه سئو</span>
+                </div>
+                <div class="blob1"></div>
+              </div>
+              <div class="card">
+                <div class="bg">
+                  <span class="card-content">مشاوره سئو</span>
+                </div>
+                <div class="blob1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media mobile section-->
+      <div class="dm_slide">
+        <div class="slide_inner m_slide_inner dm_inner">
+          <div class="slide_left dm_element">
+            <img class="mojasame" src="./img/sclup final4.png" alt="mojasame" />
+            <span class="fire_shine"></span>
+            <span class="circle_shine"></span>
+          </div>
+          <div class="slide_right social_content">
+            <div class="slide_title">
+              <span class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </span>
+              <h2>سوشیال مدیا</h2>
+              <span class="title_en">Social Media</span>
+            </div>
+            <p>
+              بهترین راه دیده شدن کسب و کار شما سوشال مدیاست ، سوشال مدیا مجموعه
+              ای کامل از بهترین شبکه های اجتماعی که شامل : اینستاگرام ، فیسبوک ،
+              لینکدین ، توییتر و یوتیوب است که در دیده شدن کسب و کار شما تاثیر
+              فوق العاده ای دارد
+            </p>
+
+            <div class="slide_right_buttons flex">
+              <div class="card">
+                <div class="bg">
+                  <span class="card-content">تعرفه خدمات</span>
+                </div>
+                <div class="blob1"></div>
+              </div>
+              <div class="card">
+                <div class="bg">
+                  <span class="card-content">مشاوره سوشیال مدیا</span>
+                </div>
+                <div class="blob1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Application mobile section-->
+      <div class="app_slide slide">
+        <div class="slide_inner m_slide_inner app_inner">
+          <div class="slide_left app_element">
+            <img
+              class="app_img"
+              src="./img/application.png"
+              width="366"
+              height="339"
+              alt="Application"
+            />
+            <span class="fire_shine"></span>
+            <span class="circle_shine"></span>
+          </div>
+          <div class="slide_right social_content">
+            <div class="slide_title">
+              <span class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </span>
+              <h2>طراحی اپلیکیشن</h2>
+              <span class="title_en">Application Design</span>
+            </div>
+            <p>
+              اپلیکیشن موبایل میتواند یکی از در درسترس ترین راه های دسترسی به
+              شما توسط مشتریانتان باشد. با این قابلیت شما میتوانید از رقیبان خود
+              پیشی بگیرید و تخصصی تر کار کنید.
+            </p>
+
+            <div class="slide_right_buttons flex">
+              <div class="card">
+                <div class="bg">
+                  <span class="card-content">تعرفه طراحی اپلیکیشن</span>
+                </div>
+                <div class="blob1"></div>
+              </div>
+              <div class="card">
+                <div class="bg">
+                  <span class="card-content">مشاوره طراحی اپلیکیشن</span>
+                </div>
+                <div class="blob1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nemunekar mobile section-->
+      <div class="slide_inner m_slide_inner nemunekar_inner">
+        <div class="nemunekar_content">
+          <div class="slide_title">
+            <h2>همکاری های ما</h2>
+            <span class="title_en">Our customers</span>
+          </div>
+        </div>
+        <div class="nemunekar_container">
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/ingot2.png"
+              class="w100-logo"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/kargar2.png"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/afzoonravan.png"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/manto-khatoon.jpg"
+              class="rounded-logo brightness-logo"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/sbtraders.png"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/masterkado.png"
+              class="brightness-logo"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/yatash.jpg"
+              class="rounded-logo brightness-logo"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/dedetail.jpg"
+              class="rounded-logo"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/roco.png"
+              class="brightness-logo"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/takhttavoos.jpg"
+              class="rounded-logo"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/almaseshahr.png"
+              class="brightness-logo"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/mi-logo.png"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/logo-vito.png"
+              class="invert-logo"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+          <div class="nemunekar">
+            <img
+              src="./img/nemunekar/zhinora.jpg"
+              class="brightness-logo rounded-logo"
+              width="80"
+              height="80"
+              alt="لوگوی نمونه کار مجموعه"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer mobile section -->
+      <div class="footer_slide">
+        <div class="slide_inner footer_inner">
+          <div class="footer_content">
+            <h2>آژانس دیجیتال مارکتینگ گلوری</h2>
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+              نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+              کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان
+              جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای
+              طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان
+              فارسی ایجاد کرد.
+            </p>
+            <div class="footer_contact_us">
+              <div class="footer_phone">
+                <div class="footer_phone_icon"></div>
+                <p>شماره تماس: 09121005689</p>
+              </div>
+              <div class="footer_email">
+                <div class="footer_email_icon"></div>
+                <p>ایمیل: info@glorygroup.ir</p>
+              </div>
+              <div class="footer_address">
+                <div class="footer_address_icon"></div>
+                <p>آدرس: ستارخان، خسرو جنوبی، اتابکی مهر ، پلاک 2</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer_social">
+            <a href="#" rel="nofollow" class="social_item_whatsapp">
+              <img
+                src="./img/whatsapp-icon2.png"
+                width="48"
+                height="48"
+                alt="whatsapp icon"
+              />
+              <span class="lamp"></span>
+            </a>
+            <a href="#" class="social_item_insta">
+              <img
+                src="./img/insta-icon.png"
+                width="48"
+                height="48"
+                alt="insta icon"
+              />
+              <span class="lamp"></span>
+            </a>
+            <a href="#" class="social_item_linkedin">
+              <img
+                src="./img/linkedin-icon.png"
+                width="48"
+                height="48"
+                alt="linkedin icon"
+              />
+              <span class="lamp"></span>
+            </a>
+          </div>
+        </div>
+        <div class="copy_right">
+          کلیه حقوق این اثر متعلق به گلوری گروپ میباشد.
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile burger menu -->
+    <div class="mobile_floating_menu">
+      <nav class="mobile_menu_nav">
+        <a href="#">صفحه نخست</a>
+        <a href="#">خدمات</a>
+        <a href="#">محصولات</a>
+        <a href="#">تعرفه</a>
+        <a href="#">تیم گلوری</a>
+        <a href="#">درباره ما</a>
+        <a href="#">تماس با ما</a>
+      </nav>
+
+      <div class="burger_menu_copy_right">
+        کلیه حقوق این اثر متعلق به گلوری گروپ میباشد.
+      </div>
+    </div>
+    <span class="mobile_menu_dark_layer"></span>
+
+    <!-- go to the top button -->
+    <!-- <div class="got-to-top"></div> -->
 
     <!-- Swiper JS -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script src="./js/index.js" defer></script>
     <script src="./js/swiper.js"></script>
     <script>
       let bulletNameArray = document.querySelectorAll(".slide");
-      console.log(bulletNameArray[0].dataset.slidename);
       var swiper = new Swiper(".mySwiper", {
-        // direction: "vertical",
         slidesPerView: 1,
         spaceBetween: 0,
         // mousewheel: true,
@@ -272,23 +1246,55 @@
           enabled: true,
         },
         allowTouchMove: false,
-        // pagination: {
-        //   el: ".swiper-pagination",
-        //   clickable: true,
-        // },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + bulletNameArray[index].dataset.slidename + "</span>";
-          },
-        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return (
+              '<span class="' +
+              className +
+              '">' +
+              bulletNameArray[index].dataset.slidename +
+              "</span>"
+            );
+          },
+        },
+        // navigation: {
+        //   enabled: false,
+        // },
+        speed: 1000,
+        parallax: true,
+        // lazy: true,
+        allowTouchMove: true,
+        direction: "vertical",
+        freeMode: true,
+        breakpoints: {
+          650: {
+            direction: "horizontal",
+            freeMode: false,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            allowTouchMove: false,
+          },
+        },
+      });
 
-        // parallax: true,
+      var swiper = new Swiper(".nk_swiper", {
+        loop: true,
+        // autoplay: {
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // },
+        navigation: {
+          nextEl: ".swiper-button-next_nk",
+          prevEl: ".swiper-button-prev_nk",
+        },
       });
     </script>
   </body>
